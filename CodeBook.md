@@ -1,8 +1,12 @@
-Column
-Variable - Units = Label or Subject
-Value - Units =
+Columns
+-----------------------------------------------------
+Variable = Label or Subject
+Value = The label Type or Subject Number
 
-
+All Remaining columns retain original unit types
+-----------------------------------------------------
+=====================================================
+-----------------------------------------------------
 Time.Body.Acceleration-mean()-X
 -----------------------------------------------------
 Time.Body.Acceleration-mean()-Y
@@ -1124,4 +1128,4 @@ angle(X,gravity.Mean)
 angle(Y,gravity.Mean)
 -----------------------------------------------------
 angle(Z,gravity.Mean)
-
+-----------------------------------------------------

@@ -1,7 +1,7 @@
 Columns
 -----------------------------------------------------
 Variable = Label or Subject
-=====================================================
+#####################################################
 Value = The label Type or Subject Number
 
 All Remaining columns retain original unit types

@@ -1,567 +1,566 @@
-|--------------------------------------------------------|------------------------------------------|
-| New Column name                                        | Original Column name                     |
-|---------------------------------------------------------------------------------------------------|
-| Variable                                               |                                          |
-| Value                                                  |                                          |
-| Time.Body.Acceleration-mean()-X                      	 | tBodyAcc-mean()-X                        |
-| Time.Body.Acceleration-mean()-Y                      	 | tBodyAcc-mean()-Y                        |
-| Time.Body.Acceleration-mean()-Z                      	 | tBodyAcc-mean()-Z                        |
-| Time.Body.Acceleration-std()-X                       	 | tBodyAcc-std()-X                         |
-| Time.Body.Acceleration-std()-Y                       	 | tBodyAcc-std()-Y                         |
-| Time.Body.Acceleration-std()-Z                       	 | tBodyAcc-std()-Z                         |
-| Time.Body.Acceleration-mad()-X                       	 | tBodyAcc-mad()-X                         |
-| Time.Body.Acceleration-mad()-Y                       	 | tBodyAcc-mad()-Y                         |
-| Time.Body.Acceleration-mad()-Z                       	 | tBodyAcc-mad()-Z                         |
-| Time.Body.Acceleration-max()-X                       	 | tBodyAcc-max()-X                         |
-| Time.Body.Acceleration-max()-Y                       	 | tBodyAcc-max()-Y                         |
-| Time.Body.Acceleration-max()-Z                       	 | tBodyAcc-max()-Z                         |
-| Time.Body.Acceleration-min()-X                       	 | tBodyAcc-min()-X                         |
-| Time.Body.Acceleration-min()-Y                       	 | tBodyAcc-min()-Y                         |
-| Time.Body.Acceleration-min()-Z                       	 | tBodyAcc-min()-Z                         |
-| Time.Body.Acceleration-sma()                         	 | tBodyAcc-sma()                           |
-| Time.Body.Acceleration-energy()-X                    	 | tBodyAcc-energy()-X                      |
-| Time.Body.Acceleration-energy()-Y                    	 | tBodyAcc-energy()-Y                      |
-| Time.Body.Acceleration-energy()-Z                    	 | tBodyAcc-energy()-Z                      |
-| Time.Body.Acceleration-iqr()-X                       	 | tBodyAcc-iqr()-X                         |
-| Time.Body.Acceleration-iqr()-Y                       	 | tBodyAcc-iqr()-Y                         |
-| Time.Body.Acceleration-iqr()-Z                       	 | tBodyAcc-iqr()-Z                         |
-| Time.Body.Acceleration-entropy()-X                   	 | tBodyAcc-entropy()-X                     |
-| Time.Body.Acceleration-entropy()-Y                   	 | tBodyAcc-entropy()-Y                     |
-| Time.Body.Acceleration-entropy()-Z                   	 | tBodyAcc-entropy()-Z                     |
-| Time.Body.Acceleration-arCoeff()-X,1                 	 | tBodyAcc-arCoeff()-X,1                   |
-| Time.Body.Acceleration-arCoeff()-X,2                 	 | tBodyAcc-arCoeff()-X,2                   |
-| Time.Body.Acceleration-arCoeff()-X,3                 	 | tBodyAcc-arCoeff()-X,3                   |
-| Time.Body.Acceleration-arCoeff()-X,4                 	 | tBodyAcc-arCoeff()-X,4                   |
-| Time.Body.Acceleration-arCoeff()-Y,1                 	 | tBodyAcc-arCoeff()-Y,1                   |
-| Time.Body.Acceleration-arCoeff()-Y,2                 	 | tBodyAcc-arCoeff()-Y,2                   |
-| Time.Body.Acceleration-arCoeff()-Y,3                 	 | tBodyAcc-arCoeff()-Y,3                   |
-| Time.Body.Acceleration-arCoeff()-Y,4                 	 | tBodyAcc-arCoeff()-Y,4                   |
-| Time.Body.Acceleration-arCoeff()-Z,1                 	 | tBodyAcc-arCoeff()-Z,1                   |
-| Time.Body.Acceleration-arCoeff()-Z,2                 	 | tBodyAcc-arCoeff()-Z,2                   |
-| Time.Body.Acceleration-arCoeff()-Z,3                 	 | tBodyAcc-arCoeff()-Z,3                   |
-| Time.Body.Acceleration-arCoeff()-Z,4                 	 | tBodyAcc-arCoeff()-Z,4                   |
-| Time.Body.Acceleration-correlation()-X,Y             	 | tBodyAcc-correlation()-X,Y               |
-| Time.Body.Acceleration-correlation()-X,Z             	 | tBodyAcc-correlation()-X,Z               |
-| Time.Body.Acceleration-correlation()-Y,Z             	 | tBodyAcc-correlation()-Y,Z               |
-| Time.Gravity.Acceleration-mean()-X                   	 | tGravityAcc-mean()-X                     |
-| Time.Gravity.Acceleration-mean()-Y                   	 | tGravityAcc-mean()-Y                     |
-| Time.Gravity.Acceleration-mean()-Z                   	 | tGravityAcc-mean()-Z                     |
-| Time.Gravity.Acceleration-std()-X                    	 | tGravityAcc-std()-X                      |
-| Time.Gravity.Acceleration-std()-Y                    	 | tGravityAcc-std()-Y                      |
-| Time.Gravity.Acceleration-std()-Z                    	 | tGravityAcc-std()-Z                      |
-| Time.Gravity.Acceleration-mad()-X                    	 | tGravityAcc-mad()-X                      |
-| Time.Gravity.Acceleration-mad()-Y                    	 | tGravityAcc-mad()-Y                      |
-| Time.Gravity.Acceleration-mad()-Z                    	 | tGravityAcc-mad()-Z                      |
-| Time.Gravity.Acceleration-max()-X                    	 | tGravityAcc-max()-X                      |
-| Time.Gravity.Acceleration-max()-Y                    	 | tGravityAcc-max()-Y                      |
-| Time.Gravity.Acceleration-max()-Z                    	 | tGravityAcc-max()-Z                      |
-| Time.Gravity.Acceleration-min()-X                    	 | tGravityAcc-min()-X                      |
-| Time.Gravity.Acceleration-min()-Y                    	 | tGravityAcc-min()-Y                      |
-| Time.Gravity.Acceleration-min()-Z                    	 | tGravityAcc-min()-Z                      |
-| Time.Gravity.Acceleration-sma()                      	 | tGravityAcc-sma()                        |
-| Time.Gravity.Acceleration-energy()-X                 	 | tGravityAcc-energy()-X                   |
-| Time.Gravity.Acceleration-energy()-Y                 	 | tGravityAcc-energy()-Y                   |
-| Time.Gravity.Acceleration-energy()-Z                 	 | tGravityAcc-energy()-Z                   |
-| Time.Gravity.Acceleration-iqr()-X                    	 | tGravityAcc-iqr()-X                      |
-| Time.Gravity.Acceleration-iqr()-Y                    	 | tGravityAcc-iqr()-Y                      |
-| Time.Gravity.Acceleration-iqr()-Z                    	 | tGravityAcc-iqr()-Z                      |
-| Time.Gravity.Acceleration-entropy()-X                	 | tGravityAcc-entropy()-X                  |
-| Time.Gravity.Acceleration-entropy()-Y                	 | tGravityAcc-entropy()-Y                  |
-| Time.Gravity.Acceleration-entropy()-Z                	 | tGravityAcc-entropy()-Z                  |
-| Time.Gravity.Acceleration-arCoeff()-X,1              	 | tGravityAcc-arCoeff()-X,1                |
-| Time.Gravity.Acceleration-arCoeff()-X,2              	 | tGravityAcc-arCoeff()-X,2                |
-| Time.Gravity.Acceleration-arCoeff()-X,3              	 | tGravityAcc-arCoeff()-X,3                |
-| Time.Gravity.Acceleration-arCoeff()-X,4              	 | tGravityAcc-arCoeff()-X,4                |
-| Time.Gravity.Acceleration-arCoeff()-Y,1              	 | tGravityAcc-arCoeff()-Y,1                |
-| Time.Gravity.Acceleration-arCoeff()-Y,2              	 | tGravityAcc-arCoeff()-Y,2                |
-| Time.Gravity.Acceleration-arCoeff()-Y,3              	 | tGravityAcc-arCoeff()-Y,3                |
-| Time.Gravity.Acceleration-arCoeff()-Y,4              	 | tGravityAcc-arCoeff()-Y,4                |
-| Time.Gravity.Acceleration-arCoeff()-Z,1              	 | tGravityAcc-arCoeff()-Z,1                |
-| Time.Gravity.Acceleration-arCoeff()-Z,2              	 | tGravityAcc-arCoeff()-Z,2                |
-| Time.Gravity.Acceleration-arCoeff()-Z,3              	 | tGravityAcc-arCoeff()-Z,3                |
-| Time.Gravity.Acceleration-arCoeff()-Z,4              	 | tGravityAcc-arCoeff()-Z,4                |
-| Time.Gravity.Acceleration-correlation()-X,Y          	 | tGravityAcc-correlation()-X,Y            |
-| Time.Gravity.Acceleration-correlation()-X,Z          	 | tGravityAcc-correlation()-X,Z            |
-| Time.Gravity.Acceleration-correlation()-Y,Z          	 | tGravityAcc-correlation()-Y,Z            |
-| Time.Body.Acceleration.Jerk-mean()-X                 	 | tBodyAccJerk-mean()-X                    |
-| Time.Body.Acceleration.Jerk-mean()-Y                 	 | tBodyAccJerk-mean()-Y                    |
-| Time.Body.Acceleration.Jerk-mean()-Z                 	 | tBodyAccJerk-mean()-Z                    |
-| Time.Body.Acceleration.Jerk-std()-X                  	 | tBodyAccJerk-std()-X                     |
-| Time.Body.Acceleration.Jerk-std()-Y                  	 | tBodyAccJerk-std()-Y                     |
-| Time.Body.Acceleration.Jerk-std()-Z                  	 | tBodyAccJerk-std()-Z                     |
-| Time.Body.Acceleration.Jerk-mad()-X                  	 | tBodyAccJerk-mad()-X                     |
-| Time.Body.Acceleration.Jerk-mad()-Y                  	 | tBodyAccJerk-mad()-Y                     |
-| Time.Body.Acceleration.Jerk-mad()-Z                  	 | tBodyAccJerk-mad()-Z                     |
-| Time.Body.Acceleration.Jerk-max()-X                  	 | tBodyAccJerk-max()-X                     |
-| Time.Body.Acceleration.Jerk-max()-Y                  	 | tBodyAccJerk-max()-Y                     |
-| Time.Body.Acceleration.Jerk-max()-Z                  	 | tBodyAccJerk-max()-Z                     |
-| Time.Body.Acceleration.Jerk-min()-X                  	 | tBodyAccJerk-min()-X                     |
-| Time.Body.Acceleration.Jerk-min()-Y                  	 | tBodyAccJerk-min()-Y                     |
-| Time.Body.Acceleration.Jerk-min()-Z                  	 | tBodyAccJerk-min()-Z                     |
-| Time.Body.Acceleration.Jerk-sma()                    	 | tBodyAccJerk-sma()                       |
-| Time.Body.Acceleration.Jerk-energy()-X               	 | tBodyAccJerk-energy()-X                  |
-| Time.Body.Acceleration.Jerk-energy()-Y               	 | tBodyAccJerk-energy()-Y                  |
-| Time.Body.Acceleration.Jerk-energy()-Z               	 | tBodyAccJerk-energy()-Z                  |
-| Time.Body.Acceleration.Jerk-iqr()-X                  	 | tBodyAccJerk-iqr()-X                     |
-| Time.Body.Acceleration.Jerk-iqr()-Y                  	 | tBodyAccJerk-iqr()-Y                     |
-| Time.Body.Acceleration.Jerk-iqr()-Z                  	 | tBodyAccJerk-iqr()-Z                     |
-| Time.Body.Acceleration.Jerk-entropy()-X              	 | tBodyAccJerk-entropy()-X                 |
-| Time.Body.Acceleration.Jerk-entropy()-Y              	 | tBodyAccJerk-entropy()-Y                 |
-| Time.Body.Acceleration.Jerk-entropy()-Z              	 | tBodyAccJerk-entropy()-Z                 |
-| Time.Body.Acceleration.Jerk-arCoeff()-X,1            	 | tBodyAccJerk-arCoeff()-X,1               |
-| Time.Body.Acceleration.Jerk-arCoeff()-X,2            	 | tBodyAccJerk-arCoeff()-X,2               |
-| Time.Body.Acceleration.Jerk-arCoeff()-X,3            	 | tBodyAccJerk-arCoeff()-X,3               |
-| Time.Body.Acceleration.Jerk-arCoeff()-X,4            	 | tBodyAccJerk-arCoeff()-X,4               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Y,1            	 | tBodyAccJerk-arCoeff()-Y,1               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Y,2            	 | tBodyAccJerk-arCoeff()-Y,2               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Y,3            	 | tBodyAccJerk-arCoeff()-Y,3               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Y,4            	 | tBodyAccJerk-arCoeff()-Y,4               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Z,1            	 | tBodyAccJerk-arCoeff()-Z,1               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Z,2            	 | tBodyAccJerk-arCoeff()-Z,2               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Z,3            	 | tBodyAccJerk-arCoeff()-Z,3               |
-| Time.Body.Acceleration.Jerk-arCoeff()-Z,4            	 | tBodyAccJerk-arCoeff()-Z,4               |
-| Time.Body.Acceleration.Jerk-correlation()-X,Y        	 | tBodyAccJerk-correlation()-X,Y           |
-| Time.Body.Acceleration.Jerk-correlation()-X,Z        	 | tBodyAccJerk-correlation()-X,Z           |
-| Time.Body.Acceleration.Jerk-correlation()-Y,Z        	 | tBodyAccJerk-correlation()-Y,Z           |
-| Time.Body.gyroscope-mean()-X                         	 | tBodyGyro-mean()-X                       |
-| Time.Body.gyroscope-mean()-Y                         	 | tBodyGyro-mean()-Y                       |
-| Time.Body.gyroscope-mean()-Z                         	 | tBodyGyro-mean()-Z                       |
-| Time.Body.gyroscope-std()-X                          	 | tBodyGyro-std()-X                        |
-| Time.Body.gyroscope-std()-Y                          	 | tBodyGyro-std()-Y                        |
-| Time.Body.gyroscope-std()-Z                          	 | tBodyGyro-std()-Z                        |
-| Time.Body.gyroscope-mad()-X                          	 | tBodyGyro-mad()-X                        |
-| Time.Body.gyroscope-mad()-Y                          	 | tBodyGyro-mad()-Y                        |
-| Time.Body.gyroscope-mad()-Z                          	 | tBodyGyro-mad()-Z                        |
-| Time.Body.gyroscope-max()-X                          	 | tBodyGyro-max()-X                        |
-| Time.Body.gyroscope-max()-Y                          	 | tBodyGyro-max()-Y                        |
-| Time.Body.gyroscope-max()-Z                          	 | tBodyGyro-max()-Z                        |
-| Time.Body.gyroscope-min()-X                          	 | tBodyGyro-min()-X                        |
-| Time.Body.gyroscope-min()-Y                          	 | tBodyGyro-min()-Y                        |
-| Time.Body.gyroscope-min()-Z                          	 | tBodyGyro-min()-Z                        |
-| Time.Body.gyroscope-sma()                            	 | tBodyGyro-sma()                          |
-| Time.Body.gyroscope-energy()-X                       	 | tBodyGyro-energy()-X                     |
-| Time.Body.gyroscope-energy()-Y                       	 | tBodyGyro-energy()-Y                     |
-| Time.Body.gyroscope-energy()-Z                       	 | tBodyGyro-energy()-Z                     |
-| Time.Body.gyroscope-iqr()-X                          	 | tBodyGyro-iqr()-X                        |
-| Time.Body.gyroscope-iqr()-Y                          	 | tBodyGyro-iqr()-Y                        |
-| Time.Body.gyroscope-iqr()-Z                          	 | tBodyGyro-iqr()-Z                        |
-| Time.Body.gyroscope-entropy()-X                      	 | tBodyGyro-entropy()-X                    |
-| Time.Body.gyroscope-entropy()-Y                      	 | tBodyGyro-entropy()-Y                    |
-| Time.Body.gyroscope-entropy()-Z                      	 | tBodyGyro-entropy()-Z                    |
-| Time.Body.gyroscope-arCoeff()-X,1                    	 | tBodyGyro-arCoeff()-X,1                  |
-| Time.Body.gyroscope-arCoeff()-X,2                    	 | tBodyGyro-arCoeff()-X,2                  |
-| Time.Body.gyroscope-arCoeff()-X,3                    	 | tBodyGyro-arCoeff()-X,3                  |
-| Time.Body.gyroscope-arCoeff()-X,4                    	 | tBodyGyro-arCoeff()-X,4                  |
-| Time.Body.gyroscope-arCoeff()-Y,1                    	 | tBodyGyro-arCoeff()-Y,1                  |
-| Time.Body.gyroscope-arCoeff()-Y,2                    	 | tBodyGyro-arCoeff()-Y,2                  |
-| Time.Body.gyroscope-arCoeff()-Y,3                    	 | tBodyGyro-arCoeff()-Y,3                  |
-| Time.Body.gyroscope-arCoeff()-Y,4                    	 | tBodyGyro-arCoeff()-Y,4                  |
-| Time.Body.gyroscope-arCoeff()-Z,1                    	 | tBodyGyro-arCoeff()-Z,1                  |
-| Time.Body.gyroscope-arCoeff()-Z,2                    	 | tBodyGyro-arCoeff()-Z,2                  |
-| Time.Body.gyroscope-arCoeff()-Z,3                    	 | tBodyGyro-arCoeff()-Z,3                  |
-| Time.Body.gyroscope-arCoeff()-Z,4                    	 | tBodyGyro-arCoeff()-Z,4                  |
-| Time.Body.gyroscope-correlation()-X,Y                	 | tBodyGyro-correlation()-X,Y              |
-| Time.Body.gyroscope-correlation()-X,Z                	 | tBodyGyro-correlation()-X,Z              |
-| Time.Body.gyroscope-correlation()-Y,Z                	 | tBodyGyro-correlation()-Y,Z              |
-| Time.Body.gyroscope.Jerk-mean()-X                    	 | tBodyGyroJerk-mean()-X                   |
-| Time.Body.gyroscope.Jerk-mean()-Y                    	 | tBodyGyroJerk-mean()-Y                   |
-| Time.Body.gyroscope.Jerk-mean()-Z                    	 | tBodyGyroJerk-mean()-Z                   |
-| Time.Body.gyroscope.Jerk-std()-X                     	 | tBodyGyroJerk-std()-X                    |
-| Time.Body.gyroscope.Jerk-std()-Y                     	 | tBodyGyroJerk-std()-Y                    |
-| Time.Body.gyroscope.Jerk-std()-Z                     	 | tBodyGyroJerk-std()-Z                    |
-| Time.Body.gyroscope.Jerk-mad()-X                     	 | tBodyGyroJerk-mad()-X                    |
-| Time.Body.gyroscope.Jerk-mad()-Y                     	 | tBodyGyroJerk-mad()-Y                    |
-| Time.Body.gyroscope.Jerk-mad()-Z                     	 | tBodyGyroJerk-mad()-Z                    |
-| Time.Body.gyroscope.Jerk-max()-X                     	 | tBodyGyroJerk-max()-X                    |
-| Time.Body.gyroscope.Jerk-max()-Y                     	 | tBodyGyroJerk-max()-Y                    |
-| Time.Body.gyroscope.Jerk-max()-Z                     	 | tBodyGyroJerk-max()-Z                    |
-| Time.Body.gyroscope.Jerk-min()-X                     	 | tBodyGyroJerk-min()-X                    |
-| Time.Body.gyroscope.Jerk-min()-Y                     	 | tBodyGyroJerk-min()-Y                    |
-| Time.Body.gyroscope.Jerk-min()-Z                     	 | tBodyGyroJerk-min()-Z                    |
-| Time.Body.gyroscope.Jerk-sma()                       	 | tBodyGyroJerk-sma()                      |
-| Time.Body.gyroscope.Jerk-energy()-X                  	 | tBodyGyroJerk-energy()-X                 |
-| Time.Body.gyroscope.Jerk-energy()-Y                  	 | tBodyGyroJerk-energy()-Y                 |
-| Time.Body.gyroscope.Jerk-energy()-Z                  	 | tBodyGyroJerk-energy()-Z                 |
-| Time.Body.gyroscope.Jerk-iqr()-X                     	 | tBodyGyroJerk-iqr()-X                    |
-| Time.Body.gyroscope.Jerk-iqr()-Y                     	 | tBodyGyroJerk-iqr()-Y                    |
-| Time.Body.gyroscope.Jerk-iqr()-Z                     	 | tBodyGyroJerk-iqr()-Z                    |
-| Time.Body.gyroscope.Jerk-entropy()-X                 	 | tBodyGyroJerk-entropy()-X                |
-| Time.Body.gyroscope.Jerk-entropy()-Y                 	 | tBodyGyroJerk-entropy()-Y                |
-| Time.Body.gyroscope.Jerk-entropy()-Z                 	 | tBodyGyroJerk-entropy()-Z                |
-| Time.Body.gyroscope.Jerk-arCoeff()-X,1               	 | tBodyGyroJerk-arCoeff()-X,1              |
-| Time.Body.gyroscope.Jerk-arCoeff()-X,2               	 | tBodyGyroJerk-arCoeff()-X,2              |
-| Time.Body.gyroscope.Jerk-arCoeff()-X,3               	 | tBodyGyroJerk-arCoeff()-X,3              |
-| Time.Body.gyroscope.Jerk-arCoeff()-X,4               	 | tBodyGyroJerk-arCoeff()-X,4              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Y,1               	 | tBodyGyroJerk-arCoeff()-Y,1              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Y,2               	 | tBodyGyroJerk-arCoeff()-Y,2              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Y,3               	 | tBodyGyroJerk-arCoeff()-Y,3              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Y,4               	 | tBodyGyroJerk-arCoeff()-Y,4              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Z,1               	 | tBodyGyroJerk-arCoeff()-Z,1              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Z,2               	 | tBodyGyroJerk-arCoeff()-Z,2              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Z,3               	 | tBodyGyroJerk-arCoeff()-Z,3              |
-| Time.Body.gyroscope.Jerk-arCoeff()-Z,4               	 | tBodyGyroJerk-arCoeff()-Z,4              |
-| Time.Body.gyroscope.Jerk-correlation()-X,Y           	 | tBodyGyroJerk-correlation()-X,Y          |
-| Time.Body.gyroscope.Jerk-correlation()-X,Z           	 | tBodyGyroJerk-correlation()-X,Z          |
-| Time.Body.gyroscope.Jerk-correlation()-Y,Z           	 | tBodyGyroJerk-correlation()-Y,Z          |
-| Time.Body.Acceleration.Magnitude-mean()              	 | tBodyAccMag-mean()                       |
-| Time.Body.Acceleration.Magnitude-std()               	 | tBodyAccMag-std()                        |
-| Time.Body.Acceleration.Magnitude-mad()               	 | tBodyAccMag-mad()                        |
-| Time.Body.Acceleration.Magnitude-max()               	 | tBodyAccMag-max()                        |
-| Time.Body.Acceleration.Magnitude-min()               	 | tBodyAccMag-min()                        |
-| Time.Body.Acceleration.Magnitude-sma()               	 | tBodyAccMag-sma()                        |
-| Time.Body.Acceleration.Magnitude-energy()            	 | tBodyAccMag-energy()                     |
-| Time.Body.Acceleration.Magnitude-iqr()               	 | tBodyAccMag-iqr()                        |
-| Time.Body.Acceleration.Magnitude-entropy()           	 | tBodyAccMag-entropy()                    |
-| Time.Body.Acceleration.Magnitude-arCoeff()1          	 | tBodyAccMag-arCoeff()1                   |
-| Time.Body.Acceleration.Magnitude-arCoeff()2          	 | tBodyAccMag-arCoeff()2                   |
-| Time.Body.Acceleration.Magnitude-arCoeff()3          	 | tBodyAccMag-arCoeff()3                   |
-| Time.Body.Acceleration.Magnitude-arCoeff()4          	 | tBodyAccMag-arCoeff()4                   |
-| Time.Gravity.Acceleration.Magnitude-mean()           	 | tGravityAccMag-mean()                    |
-| Time.Gravity.Acceleration.Magnitude-std()            	 | tGravityAccMag-std()                     |
-| Time.Gravity.Acceleration.Magnitude-mad()            	 | tGravityAccMag-mad()                     |
-| Time.Gravity.Acceleration.Magnitude-max()            	 | tGravityAccMag-max()                     |
-| Time.Gravity.Acceleration.Magnitude-min()            	 | tGravityAccMag-min()                     |
-| Time.Gravity.Acceleration.Magnitude-sma()            	 | tGravityAccMag-sma()                     |
-| Time.Gravity.Acceleration.Magnitude-energy()         	 | tGravityAccMag-energy()                  |
-| Time.Gravity.Acceleration.Magnitude-iqr()            	 | tGravityAccMag-iqr()                     |
-| Time.Gravity.Acceleration.Magnitude-entropy()        	 | tGravityAccMag-entropy()                 |
-| Time.Gravity.Acceleration.Magnitude-arCoeff()1       	 | tGravityAccMag-arCoeff()1                |
-| Time.Gravity.Acceleration.Magnitude-arCoeff()2       	 | tGravityAccMag-arCoeff()2                |
-| Time.Gravity.Acceleration.Magnitude-arCoeff()3       	 | tGravityAccMag-arCoeff()3                |
-| Time.Gravity.Acceleration.Magnitude-arCoeff()4       	 | tGravityAccMag-arCoeff()4                |
-| Time.Body.Acceleration.Jerk.Magnitude-mean()         	 | tBodyAccJerkMag-mean()                   |
-| Time.Body.Acceleration.Jerk.Magnitude-std()          	 | tBodyAccJerkMag-std()                    |
-| Time.Body.Acceleration.Jerk.Magnitude-mad()          	 | tBodyAccJerkMag-mad()                    |
-| Time.Body.Acceleration.Jerk.Magnitude-max()          	 | tBodyAccJerkMag-max()                    |
-| Time.Body.Acceleration.Jerk.Magnitude-min()          	 | tBodyAccJerkMag-min()                    |
-| Time.Body.Acceleration.Jerk.Magnitude-sma()          	 | tBodyAccJerkMag-sma()                    |
-| Time.Body.Acceleration.Jerk.Magnitude-energy()       	 | tBodyAccJerkMag-energy()                 |
-| Time.Body.Acceleration.Jerk.Magnitude-iqr()          	 | tBodyAccJerkMag-iqr()                    |
-| Time.Body.Acceleration.Jerk.Magnitude-entropy()      	 | tBodyAccJerkMag-entropy()                |
-| Time.Body.Acceleration.Jerk.Magnitude-arCoeff()1     	 | tBodyAccJerkMag-arCoeff()1               |
-| Time.Body.Acceleration.Jerk.Magnitude-arCoeff()2     	 | tBodyAccJerkMag-arCoeff()2               |
-| Time.Body.Acceleration.Jerk.Magnitude-arCoeff()3     	 | tBodyAccJerkMag-arCoeff()3               |
-| Time.Body.Acceleration.Jerk.Magnitude-arCoeff()4     	 | tBodyAccJerkMag-arCoeff()4               |
-| Time.Body.gyroscope.Magnitude-mean()                 	 | tBodyGyroMag-mean()                      |
-| Time.Body.gyroscope.Magnitude-std()                  	 | tBodyGyroMag-std()                       |
-| Time.Body.gyroscope.Magnitude-mad()                  	 | tBodyGyroMag-mad()                       |
-| Time.Body.gyroscope.Magnitude-max()                  	 | tBodyGyroMag-max()                       |
-| Time.Body.gyroscope.Magnitude-min()                  	 | tBodyGyroMag-min()                       |
-| Time.Body.gyroscope.Magnitude-sma()                  	 | tBodyGyroMag-sma()                       |
-| Time.Body.gyroscope.Magnitude-energy()               	 | tBodyGyroMag-energy()                    |
-| Time.Body.gyroscope.Magnitude-iqr()                  	 | tBodyGyroMag-iqr()                       |
-| Time.Body.gyroscope.Magnitude-entropy()              	 | tBodyGyroMag-entropy()                   |
-| Time.Body.gyroscope.Magnitude-arCoeff()1             	 | tBodyGyroMag-arCoeff()1                  |
-| Time.Body.gyroscope.Magnitude-arCoeff()2             	 | tBodyGyroMag-arCoeff()2                  |
-| Time.Body.gyroscope.Magnitude-arCoeff()3             	 | tBodyGyroMag-arCoeff()3                  |
-| Time.Body.gyroscope.Magnitude-arCoeff()4             	 | tBodyGyroMag-arCoeff()4                  |
-| Time.Body.gyroscope.Jerk.Magnitude-mean()            	 | tBodyGyroJerkMag-mean()                  |
-| Time.Body.gyroscope.Jerk.Magnitude-std()             	 | tBodyGyroJerkMag-std()                   |
-| Time.Body.gyroscope.Jerk.Magnitude-mad()             	 | tBodyGyroJerkMag-mad()                   |
-| Time.Body.gyroscope.Jerk.Magnitude-max()             	 | tBodyGyroJerkMag-max()                   |
-| Time.Body.gyroscope.Jerk.Magnitude-min()             	 | tBodyGyroJerkMag-min()                   |
-| Time.Body.gyroscope.Jerk.Magnitude-sma()             	 | tBodyGyroJerkMag-sma()                   |
-| Time.Body.gyroscope.Jerk.Magnitude-energy()          	 | tBodyGyroJerkMag-energy()                |
-| Time.Body.gyroscope.Jerk.Magnitude-iqr()             	 | tBodyGyroJerkMag-iqr()                   |
-| Time.Body.gyroscope.Jerk.Magnitude-entropy()         	 | tBodyGyroJerkMag-entropy()               |
-| Time.Body.gyroscope.Jerk.Magnitude-arCoeff()1        	 | tBodyGyroJerkMag-arCoeff()1              |
-| Time.Body.gyroscope.Jerk.Magnitude-arCoeff()2        	 | tBodyGyroJerkMag-arCoeff()2              |
-| Time.Body.gyroscope.Jerk.Magnitude-arCoeff()3        	 | tBodyGyroJerkMag-arCoeff()3              |
-| Time.Body.gyroscope.Jerk.Magnitude-arCoeff()4        	 | tBodyGyroJerkMag-arCoeff()4              |
-| FFT.Body.Acceleration-mean()-X                       	 | fBodyAcc-mean()-X                        |
-| FFT.Body.Acceleration-mean()-Y                       	 | fBodyAcc-mean()-Y                        |
-| FFT.Body.Acceleration-mean()-Z                       	 | fBodyAcc-mean()-Z                        |
-| FFT.Body.Acceleration-std()-X                        	 | fBodyAcc-std()-X                         |
-| FFT.Body.Acceleration-std()-Y                        	 | fBodyAcc-std()-Y                         |
-| FFT.Body.Acceleration-std()-Z                        	 | fBodyAcc-std()-Z                         |
-| FFT.Body.Acceleration-mad()-X                        	 | fBodyAcc-mad()-X                         |
-| FFT.Body.Acceleration-mad()-Y                        	 | fBodyAcc-mad()-Y                         |
-| FFT.Body.Acceleration-mad()-Z                        	 | fBodyAcc-mad()-Z                         |
-| FFT.Body.Acceleration-max()-X                        	 | fBodyAcc-max()-X                         |
-| FFT.Body.Acceleration-max()-Y                        	 | fBodyAcc-max()-Y                         |
-| FFT.Body.Acceleration-max()-Z                        	 | fBodyAcc-max()-Z                         |
-| FFT.Body.Acceleration-min()-X                        	 | fBodyAcc-min()-X                         |
-| FFT.Body.Acceleration-min()-Y                        	 | fBodyAcc-min()-Y                         |
-| FFT.Body.Acceleration-min()-Z                        	 | fBodyAcc-min()-Z                         |
-| FFT.Body.Acceleration-sma()                          	 | fBodyAcc-sma()                           |
-| FFT.Body.Acceleration-energy()-X                     	 | fBodyAcc-energy()-X                      |
-| FFT.Body.Acceleration-energy()-Y                     	 | fBodyAcc-energy()-Y                      |
-| FFT.Body.Acceleration-energy()-Z                     	 | fBodyAcc-energy()-Z                      |
-| FFT.Body.Acceleration-iqr()-X                        	 | fBodyAcc-iqr()-X                         |
-| FFT.Body.Acceleration-iqr()-Y                        	 | fBodyAcc-iqr()-Y                         |
-| FFT.Body.Acceleration-iqr()-Z                        	 | fBodyAcc-iqr()-Z                         |
-| FFT.Body.Acceleration-entropy()-X                    	 | fBodyAcc-entropy()-X                     |
-| FFT.Body.Acceleration-entropy()-Y                    	 | fBodyAcc-entropy()-Y                     |
-| FFT.Body.Acceleration-entropy()-Z                    	 | fBodyAcc-entropy()-Z                     |
-| FFT.Body.Acceleration-maxInds-X                      	 | fBodyAcc-maxInds-X                       |
-| FFT.Body.Acceleration-maxInds-Y                      	 | fBodyAcc-maxInds-Y                       |
-| FFT.Body.Acceleration-maxInds-Z                      	 | fBodyAcc-maxInds-Z                       |
-| FFT.Body.Acceleration-meanFreq()-X                   	 | fBodyAcc-meanFreq()-X                    |
-| FFT.Body.Acceleration-meanFreq()-Y                   	 | fBodyAcc-meanFreq()-Y                    |
-| FFT.Body.Acceleration-meanFreq()-Z                   	 | fBodyAcc-meanFreq()-Z                    |
-| FFT.Body.Acceleration-skewness()-X                   	 | fBodyAcc-skewness()-X                    |
-| FFT.Body.Acceleration-kurtosis()-X                   	 | fBodyAcc-kurtosis()-X                    |
-| FFT.Body.Acceleration-skewness()-Y                   	 | fBodyAcc-skewness()-Y                    |
-| FFT.Body.Acceleration-kurtosis()-Y                   	 | fBodyAcc-kurtosis()-Y                    |
-| FFT.Body.Acceleration-skewness()-Z                   	 | fBodyAcc-skewness()-Z                    |
-| FFT.Body.Acceleration-kurtosis()-Z                   	 | fBodyAcc-kurtosis()-Z                    |
-| FFT.Body.Acceleration-bandsEnergy()-1,8              	 | fBodyAcc-bandsEnergy()-1,8               |
-| FFT.Body.Acceleration-bandsEnergy()-9,16             	 | fBodyAcc-bandsEnergy()-9,16              |
-| FFT.Body.Acceleration-bandsEnergy()-17,24            	 | fBodyAcc-bandsEnergy()-17,24             |
-| FFT.Body.Acceleration-bandsEnergy()-25,32            	 | fBodyAcc-bandsEnergy()-25,32             |
-| FFT.Body.Acceleration-bandsEnergy()-33,40            	 | fBodyAcc-bandsEnergy()-33,40             |
-| FFT.Body.Acceleration-bandsEnergy()-41,48            	 | fBodyAcc-bandsEnergy()-41,48             |
-| FFT.Body.Acceleration-bandsEnergy()-49,56            	 | fBodyAcc-bandsEnergy()-49,56             |
-| FFT.Body.Acceleration-bandsEnergy()-57,64            	 | fBodyAcc-bandsEnergy()-57,64             |
-| FFT.Body.Acceleration-bandsEnergy()-1,16             	 | fBodyAcc-bandsEnergy()-1,16              |
-| FFT.Body.Acceleration-bandsEnergy()-17,32            	 | fBodyAcc-bandsEnergy()-17,32             |
-| FFT.Body.Acceleration-bandsEnergy()-33,48            	 | fBodyAcc-bandsEnergy()-33,48             |
-| FFT.Body.Acceleration-bandsEnergy()-49,64            	 | fBodyAcc-bandsEnergy()-49,64             |
-| FFT.Body.Acceleration-bandsEnergy()-1,24             	 | fBodyAcc-bandsEnergy()-1,24              |
-| FFT.Body.Acceleration-bandsEnergy()-25,48            	 | fBodyAcc-bandsEnergy()-25,48             |
-| FFT.Body.Acceleration-bandsEnergy()-1,8              	 | fBodyAcc-bandsEnergy()-1,8               |
-| FFT.Body.Acceleration-bandsEnergy()-9,16             	 | fBodyAcc-bandsEnergy()-9,16              |
-| FFT.Body.Acceleration-bandsEnergy()-17,24            	 | fBodyAcc-bandsEnergy()-17,24             |
-| FFT.Body.Acceleration-bandsEnergy()-25,32            	 | fBodyAcc-bandsEnergy()-25,32             |
-| FFT.Body.Acceleration-bandsEnergy()-33,40            	 | fBodyAcc-bandsEnergy()-33,40             |
-| FFT.Body.Acceleration-bandsEnergy()-41,48            	 | fBodyAcc-bandsEnergy()-41,48             |
-| FFT.Body.Acceleration-bandsEnergy()-49,56            	 | fBodyAcc-bandsEnergy()-49,56             |
-| FFT.Body.Acceleration-bandsEnergy()-57,64            	 | fBodyAcc-bandsEnergy()-57,64             |
-| FFT.Body.Acceleration-bandsEnergy()-1,16             	 | fBodyAcc-bandsEnergy()-1,16              |
-| FFT.Body.Acceleration-bandsEnergy()-17,32            	 | fBodyAcc-bandsEnergy()-17,32             |
-| FFT.Body.Acceleration-bandsEnergy()-33,48            	 | fBodyAcc-bandsEnergy()-33,48             |
-| FFT.Body.Acceleration-bandsEnergy()-49,64            	 | fBodyAcc-bandsEnergy()-49,64             |
-| FFT.Body.Acceleration-bandsEnergy()-1,24             	 | fBodyAcc-bandsEnergy()-1,24              |
-| FFT.Body.Acceleration-bandsEnergy()-25,48            	 | fBodyAcc-bandsEnergy()-25,48             |
-| FFT.Body.Acceleration-bandsEnergy()-1,8              	 | fBodyAcc-bandsEnergy()-1,8               |
-| FFT.Body.Acceleration-bandsEnergy()-9,16             	 | fBodyAcc-bandsEnergy()-9,16              |
-| FFT.Body.Acceleration-bandsEnergy()-17,24            	 | fBodyAcc-bandsEnergy()-17,24             |
-| FFT.Body.Acceleration-bandsEnergy()-25,32            	 | fBodyAcc-bandsEnergy()-25,32             |
-| FFT.Body.Acceleration-bandsEnergy()-33,40            	 | fBodyAcc-bandsEnergy()-33,40             |
-| FFT.Body.Acceleration-bandsEnergy()-41,48            	 | fBodyAcc-bandsEnergy()-41,48             |
-| FFT.Body.Acceleration-bandsEnergy()-49,56            	 | fBodyAcc-bandsEnergy()-49,56             |
-| FFT.Body.Acceleration-bandsEnergy()-57,64            	 | fBodyAcc-bandsEnergy()-57,64             |
-| FFT.Body.Acceleration-bandsEnergy()-1,16             	 | fBodyAcc-bandsEnergy()-1,16              |
-| FFT.Body.Acceleration-bandsEnergy()-17,32            	 | fBodyAcc-bandsEnergy()-17,32             |
-| FFT.Body.Acceleration-bandsEnergy()-33,48            	 | fBodyAcc-bandsEnergy()-33,48             |
-| FFT.Body.Acceleration-bandsEnergy()-49,64            	 | fBodyAcc-bandsEnergy()-49,64             |
-| FFT.Body.Acceleration-bandsEnergy()-1,24             	 | fBodyAcc-bandsEnergy()-1,24              |
-| FFT.Body.Acceleration-bandsEnergy()-25,48            	 | fBodyAcc-bandsEnergy()-25,48             |
-| FFT.Body.Acceleration.Jerk-mean()-X                  	 | fBodyAccJerk-mean()-X                    |
-| FFT.Body.Acceleration.Jerk-mean()-Y                  	 | fBodyAccJerk-mean()-Y                    |
-| FFT.Body.Acceleration.Jerk-mean()-Z                  	 | fBodyAccJerk-mean()-Z                    |
-| FFT.Body.Acceleration.Jerk-std()-X                   	 | fBodyAccJerk-std()-X                     |
-| FFT.Body.Acceleration.Jerk-std()-Y                   	 | fBodyAccJerk-std()-Y                     |
-| FFT.Body.Acceleration.Jerk-std()-Z                   	 | fBodyAccJerk-std()-Z                     |
-| FFT.Body.Acceleration.Jerk-mad()-X                   	 | fBodyAccJerk-mad()-X                     |
-| FFT.Body.Acceleration.Jerk-mad()-Y                   	 | fBodyAccJerk-mad()-Y                     |
-| FFT.Body.Acceleration.Jerk-mad()-Z                   	 | fBodyAccJerk-mad()-Z                     |
-| FFT.Body.Acceleration.Jerk-max()-X                   	 | fBodyAccJerk-max()-X                     |
-| FFT.Body.Acceleration.Jerk-max()-Y                   	 | fBodyAccJerk-max()-Y                     |
-| FFT.Body.Acceleration.Jerk-max()-Z                   	 | fBodyAccJerk-max()-Z                     |
-| FFT.Body.Acceleration.Jerk-min()-X                   	 | fBodyAccJerk-min()-X                     |
-| FFT.Body.Acceleration.Jerk-min()-Y                   	 | fBodyAccJerk-min()-Y                     |
-| FFT.Body.Acceleration.Jerk-min()-Z                   	 | fBodyAccJerk-min()-Z                     |
-| FFT.Body.Acceleration.Jerk-sma()                     	 | fBodyAccJerk-sma()                       |
-| FFT.Body.Acceleration.Jerk-energy()-X                	 | fBodyAccJerk-energy()-X                  |
-| FFT.Body.Acceleration.Jerk-energy()-Y                	 | fBodyAccJerk-energy()-Y                  |
-| FFT.Body.Acceleration.Jerk-energy()-Z                	 | fBodyAccJerk-energy()-Z                  |
-| FFT.Body.Acceleration.Jerk-iqr()-X                   	 | fBodyAccJerk-iqr()-X                     |
-| FFT.Body.Acceleration.Jerk-iqr()-Y                   	 | fBodyAccJerk-iqr()-Y                     |
-| FFT.Body.Acceleration.Jerk-iqr()-Z                   	 | fBodyAccJerk-iqr()-Z                     |
-| FFT.Body.Acceleration.Jerk-entropy()-X               	 | fBodyAccJerk-entropy()-X                 |
-| FFT.Body.Acceleration.Jerk-entropy()-Y               	 | fBodyAccJerk-entropy()-Y                 |
-| FFT.Body.Acceleration.Jerk-entropy()-Z               	 | fBodyAccJerk-entropy()-Z                 |
-| FFT.Body.Acceleration.Jerk-maxInds-X                 	 | fBodyAccJerk-maxInds-X                   |
-| FFT.Body.Acceleration.Jerk-maxInds-Y                 	 | fBodyAccJerk-maxInds-Y                   |
-| FFT.Body.Acceleration.Jerk-maxInds-Z                 	 | fBodyAccJerk-maxInds-Z                   |
-| FFT.Body.Acceleration.Jerk-meanFreq()-X              	 | fBodyAccJerk-meanFreq()-X                |
-| FFT.Body.Acceleration.Jerk-meanFreq()-Y              	 | fBodyAccJerk-meanFreq()-Y                |
-| FFT.Body.Acceleration.Jerk-meanFreq()-Z              	 | fBodyAccJerk-meanFreq()-Z                |
-| FFT.Body.Acceleration.Jerk-skewness()-X              	 | fBodyAccJerk-skewness()-X                |
-| FFT.Body.Acceleration.Jerk-kurtosis()-X              	 | fBodyAccJerk-kurtosis()-X                |
-| FFT.Body.Acceleration.Jerk-skewness()-Y              	 | fBodyAccJerk-skewness()-Y                |
-| FFT.Body.Acceleration.Jerk-kurtosis()-Y              	 | fBodyAccJerk-kurtosis()-Y                |
-| FFT.Body.Acceleration.Jerk-skewness()-Z              	 | fBodyAccJerk-skewness()-Z                |
-| FFT.Body.Acceleration.Jerk-kurtosis()-Z              	 | fBodyAccJerk-kurtosis()-Z                |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,8         	 | fBodyAccJerk-bandsEnergy()-1,8           |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-9,16        	 | fBodyAccJerk-bandsEnergy()-9,16          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-17,24       	 | fBodyAccJerk-bandsEnergy()-17,24         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-25,32       	 | fBodyAccJerk-bandsEnergy()-25,32         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-33,40       	 | fBodyAccJerk-bandsEnergy()-33,40         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-41,48       	 | fBodyAccJerk-bandsEnergy()-41,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-49,56       	 | fBodyAccJerk-bandsEnergy()-49,56         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-57,64       	 | fBodyAccJerk-bandsEnergy()-57,64         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,16        	 | fBodyAccJerk-bandsEnergy()-1,16          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-17,32       	 | fBodyAccJerk-bandsEnergy()-17,32         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-33,48       	 | fBodyAccJerk-bandsEnergy()-33,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-49,64       	 | fBodyAccJerk-bandsEnergy()-49,64         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,24        	 | fBodyAccJerk-bandsEnergy()-1,24          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-25,48       	 | fBodyAccJerk-bandsEnergy()-25,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,8         	 | fBodyAccJerk-bandsEnergy()-1,8           |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-9,16        	 | fBodyAccJerk-bandsEnergy()-9,16          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-17,24       	 | fBodyAccJerk-bandsEnergy()-17,24         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-25,32       	 | fBodyAccJerk-bandsEnergy()-25,32         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-33,40       	 | fBodyAccJerk-bandsEnergy()-33,40         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-41,48       	 | fBodyAccJerk-bandsEnergy()-41,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-49,56       	 | fBodyAccJerk-bandsEnergy()-49,56         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-57,64       	 | fBodyAccJerk-bandsEnergy()-57,64         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,16        	 | fBodyAccJerk-bandsEnergy()-1,16          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-17,32       	 | fBodyAccJerk-bandsEnergy()-17,32         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-33,48       	 | fBodyAccJerk-bandsEnergy()-33,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-49,64       	 | fBodyAccJerk-bandsEnergy()-49,64         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,24        	 | fBodyAccJerk-bandsEnergy()-1,24          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-25,48       	 | fBodyAccJerk-bandsEnergy()-25,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,8         	 | fBodyAccJerk-bandsEnergy()-1,8           |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-9,16        	 | fBodyAccJerk-bandsEnergy()-9,16          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-17,24       	 | fBodyAccJerk-bandsEnergy()-17,24         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-25,32       	 | fBodyAccJerk-bandsEnergy()-25,32         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-33,40       	 | fBodyAccJerk-bandsEnergy()-33,40         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-41,48       	 | fBodyAccJerk-bandsEnergy()-41,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-49,56       	 | fBodyAccJerk-bandsEnergy()-49,56         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-57,64       	 | fBodyAccJerk-bandsEnergy()-57,64         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,16        	 | fBodyAccJerk-bandsEnergy()-1,16          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-17,32       	 | fBodyAccJerk-bandsEnergy()-17,32         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-33,48       	 | fBodyAccJerk-bandsEnergy()-33,48         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-49,64       	 | fBodyAccJerk-bandsEnergy()-49,64         |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-1,24        	 | fBodyAccJerk-bandsEnergy()-1,24          |
-| FFT.Body.Acceleration.Jerk-bandsEnergy()-25,48       	 | fBodyAccJerk-bandsEnergy()-25,48         |
-| FFT.Body.gyroscope-mean()-X                          	 | fBodyGyro-mean()-X                       |
-| FFT.Body.gyroscope-mean()-Y                          	 | fBodyGyro-mean()-Y                       |
-| FFT.Body.gyroscope-mean()-Z                          	 | fBodyGyro-mean()-Z                       |
-| FFT.Body.gyroscope-std()-X                           	 | fBodyGyro-std()-X                        |
-| FFT.Body.gyroscope-std()-Y                           	 | fBodyGyro-std()-Y                        |
-| FFT.Body.gyroscope-std()-Z                           	 | fBodyGyro-std()-Z                        |
-| FFT.Body.gyroscope-mad()-X                           	 | fBodyGyro-mad()-X                        |
-| FFT.Body.gyroscope-mad()-Y                           	 | fBodyGyro-mad()-Y                        |
-| FFT.Body.gyroscope-mad()-Z                           	 | fBodyGyro-mad()-Z                        |
-| FFT.Body.gyroscope-max()-X                           	 | fBodyGyro-max()-X                        |
-| FFT.Body.gyroscope-max()-Y                           	 | fBodyGyro-max()-Y                        |
-| FFT.Body.gyroscope-max()-Z                           	 | fBodyGyro-max()-Z                        |
-| FFT.Body.gyroscope-min()-X                           	 | fBodyGyro-min()-X                        |
-| FFT.Body.gyroscope-min()-Y                           	 | fBodyGyro-min()-Y                        |
-| FFT.Body.gyroscope-min()-Z                           	 | fBodyGyro-min()-Z                        |
-| FFT.Body.gyroscope-sma()                             	 | fBodyGyro-sma()                          |
-| FFT.Body.gyroscope-energy()-X                        	 | fBodyGyro-energy()-X                     |
-| FFT.Body.gyroscope-energy()-Y                        	 | fBodyGyro-energy()-Y                     |
-| FFT.Body.gyroscope-energy()-Z                        	 | fBodyGyro-energy()-Z                     |
-| FFT.Body.gyroscope-iqr()-X                           	 | fBodyGyro-iqr()-X                        |
-| FFT.Body.gyroscope-iqr()-Y                           	 | fBodyGyro-iqr()-Y                        |
-| FFT.Body.gyroscope-iqr()-Z                           	 | fBodyGyro-iqr()-Z                        |
-| FFT.Body.gyroscope-entropy()-X                       	 | fBodyGyro-entropy()-X                    |
-| FFT.Body.gyroscope-entropy()-Y                       	 | fBodyGyro-entropy()-Y                    |
-| FFT.Body.gyroscope-entropy()-Z                       	 | fBodyGyro-entropy()-Z                    |
-| FFT.Body.gyroscope-maxInds-X                         	 | fBodyGyro-maxInds-X                      |
-| FFT.Body.gyroscope-maxInds-Y                         	 | fBodyGyro-maxInds-Y                      |
-| FFT.Body.gyroscope-maxInds-Z                         	 | fBodyGyro-maxInds-Z                      |
-| FFT.Body.gyroscope-meanFreq()-X                      	 | fBodyGyro-meanFreq()-X                   |
-| FFT.Body.gyroscope-meanFreq()-Y                      	 | fBodyGyro-meanFreq()-Y                   |
-| FFT.Body.gyroscope-meanFreq()-Z                      	 | fBodyGyro-meanFreq()-Z                   |
-| FFT.Body.gyroscope-skewness()-X                      	 | fBodyGyro-skewness()-X                   |
-| FFT.Body.gyroscope-kurtosis()-X                      	 | fBodyGyro-kurtosis()-X                   |
-| FFT.Body.gyroscope-skewness()-Y                      	 | fBodyGyro-skewness()-Y                   |
-| FFT.Body.gyroscope-kurtosis()-Y                      	 | fBodyGyro-kurtosis()-Y                   |
-| FFT.Body.gyroscope-skewness()-Z                      	 | fBodyGyro-skewness()-Z                   |
-| FFT.Body.gyroscope-kurtosis()-Z                      	 | fBodyGyro-kurtosis()-Z                   |
-| FFT.Body.gyroscope-bandsEnergy()-1,8                 	 | fBodyGyro-bandsEnergy()-1,8              |
-| FFT.Body.gyroscope-bandsEnergy()-9,16                	 | fBodyGyro-bandsEnergy()-9,16             |
-| FFT.Body.gyroscope-bandsEnergy()-17,24               	 | fBodyGyro-bandsEnergy()-17,24            |
-| FFT.Body.gyroscope-bandsEnergy()-25,32               	 | fBodyGyro-bandsEnergy()-25,32            |
-| FFT.Body.gyroscope-bandsEnergy()-33,40               	 | fBodyGyro-bandsEnergy()-33,40            |
-| FFT.Body.gyroscope-bandsEnergy()-41,48               	 | fBodyGyro-bandsEnergy()-41,48            |
-| FFT.Body.gyroscope-bandsEnergy()-49,56               	 | fBodyGyro-bandsEnergy()-49,56            |
-| FFT.Body.gyroscope-bandsEnergy()-57,64               	 | fBodyGyro-bandsEnergy()-57,64            |
-| FFT.Body.gyroscope-bandsEnergy()-1,16                	 | fBodyGyro-bandsEnergy()-1,16             |
-| FFT.Body.gyroscope-bandsEnergy()-17,32               	 | fBodyGyro-bandsEnergy()-17,32            |
-| FFT.Body.gyroscope-bandsEnergy()-33,48               	 | fBodyGyro-bandsEnergy()-33,48            |
-| FFT.Body.gyroscope-bandsEnergy()-49,64               	 | fBodyGyro-bandsEnergy()-49,64            |
-| FFT.Body.gyroscope-bandsEnergy()-1,24                	 | fBodyGyro-bandsEnergy()-1,24             |
-| FFT.Body.gyroscope-bandsEnergy()-25,48               	 | fBodyGyro-bandsEnergy()-25,48            |
-| FFT.Body.gyroscope-bandsEnergy()-1,8                 	 | fBodyGyro-bandsEnergy()-1,8              |
-| FFT.Body.gyroscope-bandsEnergy()-9,16                	 | fBodyGyro-bandsEnergy()-9,16             |
-| FFT.Body.gyroscope-bandsEnergy()-17,24               	 | fBodyGyro-bandsEnergy()-17,24            |
-| FFT.Body.gyroscope-bandsEnergy()-25,32               	 | fBodyGyro-bandsEnergy()-25,32            |
-| FFT.Body.gyroscope-bandsEnergy()-33,40               	 | fBodyGyro-bandsEnergy()-33,40            |
-| FFT.Body.gyroscope-bandsEnergy()-41,48               	 | fBodyGyro-bandsEnergy()-41,48            |
-| FFT.Body.gyroscope-bandsEnergy()-49,56               	 | fBodyGyro-bandsEnergy()-49,56            |
-| FFT.Body.gyroscope-bandsEnergy()-57,64               	 | fBodyGyro-bandsEnergy()-57,64            |
-| FFT.Body.gyroscope-bandsEnergy()-1,16                	 | fBodyGyro-bandsEnergy()-1,16             |
-| FFT.Body.gyroscope-bandsEnergy()-17,32               	 | fBodyGyro-bandsEnergy()-17,32            |
-| FFT.Body.gyroscope-bandsEnergy()-33,48               	 | fBodyGyro-bandsEnergy()-33,48            |
-| FFT.Body.gyroscope-bandsEnergy()-49,64               	 | fBodyGyro-bandsEnergy()-49,64            |
-| FFT.Body.gyroscope-bandsEnergy()-1,24                	 | fBodyGyro-bandsEnergy()-1,24             |
-| FFT.Body.gyroscope-bandsEnergy()-25,48               	 | fBodyGyro-bandsEnergy()-25,48            |
-| FFT.Body.gyroscope-bandsEnergy()-1,8                 	 | fBodyGyro-bandsEnergy()-1,8              |
-| FFT.Body.gyroscope-bandsEnergy()-9,16                	 | fBodyGyro-bandsEnergy()-9,16             |
-| FFT.Body.gyroscope-bandsEnergy()-17,24               	 | fBodyGyro-bandsEnergy()-17,24            |
-| FFT.Body.gyroscope-bandsEnergy()-25,32               	 | fBodyGyro-bandsEnergy()-25,32            |
-| FFT.Body.gyroscope-bandsEnergy()-33,40               	 | fBodyGyro-bandsEnergy()-33,40            |
-| FFT.Body.gyroscope-bandsEnergy()-41,48               	 | fBodyGyro-bandsEnergy()-41,48            |
-| FFT.Body.gyroscope-bandsEnergy()-49,56               	 | fBodyGyro-bandsEnergy()-49,56            |
-| FFT.Body.gyroscope-bandsEnergy()-57,64               	 | fBodyGyro-bandsEnergy()-57,64            |
-| FFT.Body.gyroscope-bandsEnergy()-1,16                	 | fBodyGyro-bandsEnergy()-1,16             |
-| FFT.Body.gyroscope-bandsEnergy()-17,32               	 | fBodyGyro-bandsEnergy()-17,32            |
-| FFT.Body.gyroscope-bandsEnergy()-33,48               	 | fBodyGyro-bandsEnergy()-33,48            |
-| FFT.Body.gyroscope-bandsEnergy()-49,64               	 | fBodyGyro-bandsEnergy()-49,64            |
-| FFT.Body.gyroscope-bandsEnergy()-1,24                	 | fBodyGyro-bandsEnergy()-1,24             |
-| FFT.Body.gyroscope-bandsEnergy()-25,48               	 | fBodyGyro-bandsEnergy()-25,48            |
-| FFT.Body.Acceleration.Magnitude-mean()               	 | fBodyAccMag-mean()                       |
-| FFT.Body.Acceleration.Magnitude-std()                	 | fBodyAccMag-std()                        |
-| FFT.Body.Acceleration.Magnitude-mad()                	 | fBodyAccMag-mad()                        |
-| FFT.Body.Acceleration.Magnitude-max()                	 | fBodyAccMag-max()                        |
-| FFT.Body.Acceleration.Magnitude-min()                	 | fBodyAccMag-min()                        |
-| FFT.Body.Acceleration.Magnitude-sma()                	 | fBodyAccMag-sma()                        |
-| FFT.Body.Acceleration.Magnitude-energy()             	 | fBodyAccMag-energy()                     |
-| FFT.Body.Acceleration.Magnitude-iqr()                	 | fBodyAccMag-iqr()                        |
-| FFT.Body.Acceleration.Magnitude-entropy()            	 | fBodyAccMag-entropy()                    |
-| FFT.Body.Acceleration.Magnitude-maxInds              	 | fBodyAccMag-maxInds                      |
-| FFT.Body.Acceleration.Magnitude-meanFreq()           	 | fBodyAccMag-meanFreq()                   |
-| FFT.Body.Acceleration.Magnitude-skewness()           	 | fBodyAccMag-skewness()                   |
-| FFT.Body.Acceleration.Magnitude-kurtosis()           	 | fBodyAccMag-kurtosis()                   |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-mean()     	 | fBodyBodyAccJerkMag-mean()               |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-std()      	 | fBodyBodyAccJerkMag-std()                |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-mad()      	 | fBodyBodyAccJerkMag-mad()                |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-max()      	 | fBodyBodyAccJerkMag-max()                |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-min()      	 | fBodyBodyAccJerkMag-min()                |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-sma()      	 | fBodyBodyAccJerkMag-sma()                |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-energy()   	 | fBodyBodyAccJerkMag-energy()             |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-iqr()      	 | fBodyBodyAccJerkMag-iqr()                |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-entropy()  	 | fBodyBodyAccJerkMag-entropy()            |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-maxInds    	 | fBodyBodyAccJerkMag-maxInds              |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-meanFreq() 	 | fBodyBodyAccJerkMag-meanFreq()           |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-skewness() 	 | fBodyBodyAccJerkMag-skewness()           |
-| FFT.Body.Body.Acceleration.Jerk.Magnitude-kurtosis() 	 | fBodyBodyAccJerkMag-kurtosis()           |
-| FFT.Body.Body.gyroscope.Magnitude-mean()             	 | fBodyBodyGyroMag-mean()                  |
-| FFT.Body.Body.gyroscope.Magnitude-std()              	 | fBodyBodyGyroMag-std()                   |
-| FFT.Body.Body.gyroscope.Magnitude-mad()              	 | fBodyBodyGyroMag-mad()                   |
-| FFT.Body.Body.gyroscope.Magnitude-max()              	 | fBodyBodyGyroMag-max()                   |
-| FFT.Body.Body.gyroscope.Magnitude-min()              	 | fBodyBodyGyroMag-min()                   |
-| FFT.Body.Body.gyroscope.Magnitude-sma()              	 | fBodyBodyGyroMag-sma()                   |
-| FFT.Body.Body.gyroscope.Magnitude-energy()           	 | fBodyBodyGyroMag-energy()                |
-| FFT.Body.Body.gyroscope.Magnitude-iqr()              	 | fBodyBodyGyroMag-iqr()                   |
-| FFT.Body.Body.gyroscope.Magnitude-entropy()          	 | fBodyBodyGyroMag-entropy()               |
-| FFT.Body.Body.gyroscope.Magnitude-maxInds            	 | fBodyBodyGyroMag-maxInds                 |
-| FFT.Body.Body.gyroscope.Magnitude-meanFreq()         	 | fBodyBodyGyroMag-meanFreq()              |
-| FFT.Body.Body.gyroscope.Magnitude-skewness()         	 | fBodyBodyGyroMag-skewness()              |
-| FFT.Body.Body.gyroscope.Magnitude-kurtosis()         	 | fBodyBodyGyroMag-kurtosis()              |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-mean()        	 | fBodyBodyGyroJerkMag-mean()              |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-std()         	 | fBodyBodyGyroJerkMag-std()               |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-mad()         	 | fBodyBodyGyroJerkMag-mad()               |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-max()         	 | fBodyBodyGyroJerkMag-max()               |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-min()         	 | fBodyBodyGyroJerkMag-min()               |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-sma()         	 | fBodyBodyGyroJerkMag-sma()               |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-energy()      	 | fBodyBodyGyroJerkMag-energy()            |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-iqr()         	 | fBodyBodyGyroJerkMag-iqr()               |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-entropy()     	 | fBodyBodyGyroJerkMag-entropy()           |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-maxInds       	 | fBodyBodyGyroJerkMag-maxInds             |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-meanFreq()    	 | fBodyBodyGyroJerkMag-meanFreq()          |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-skewness()    	 | fBodyBodyGyroJerkMag-skewness()          |
-| FFT.Body.Body.gyroscope.Jerk.Magnitude-kurtosis()    	 | fBodyBodyGyroJerkMag-kurtosis()          |
-| angle(Time.Body.Acceleration.Mean,gravity)           	 | angle(tBodyAccMean,gravity)				|
-| angle(Time.Body.Acceleration.Jerk.Mean),gravity.Mean)	 | angle(tBodyAccJerkMean),gravityMean)		|
-| angle(Time.Body.gyroscope.Mean,gravity.Mean)         	 | angle(tBodyGyroMean,gravityMean)			|
-| angle(Time.Body.gyroscope.Jerk.Mean,gravity.Mean)    	 | angle(tBodyGyroJerkMean,gravityMean)		|
-| angle(X,gravity.Mean)                                	 | angle(X,gravityMean)						|
-| angle(Y,gravity.Mean)                                	 | angle(Y,gravityMean)						|
-| angle(Z,gravity.Mean)	                                 | angle(Z,gravityMean)						|
-|--------------------------------------------------------|------------------------------------------|
+Column
+Variable - Units = Label or Subject
+Value - Units =
+
+
+Time.Body.Acceleration-mean()-X
+Time.Body.Acceleration-mean()-Y
+Time.Body.Acceleration-mean()-Z
+Time.Body.Acceleration-std()-X
+Time.Body.Acceleration-std()-Y
+Time.Body.Acceleration-std()-Z
+Time.Body.Acceleration-mad()-X
+Time.Body.Acceleration-mad()-Y
+Time.Body.Acceleration-mad()-Z
+Time.Body.Acceleration-max()-X
+Time.Body.Acceleration-max()-Y
+Time.Body.Acceleration-max()-Z
+Time.Body.Acceleration-min()-X
+Time.Body.Acceleration-min()-Y
+Time.Body.Acceleration-min()-Z
+Time.Body.Acceleration-sma()
+Time.Body.Acceleration-energy()-X
+Time.Body.Acceleration-energy()-Y
+Time.Body.Acceleration-energy()-Z
+Time.Body.Acceleration-iqr()-X
+Time.Body.Acceleration-iqr()-Y
+Time.Body.Acceleration-iqr()-Z
+Time.Body.Acceleration-entropy()-X
+Time.Body.Acceleration-entropy()-Y
+Time.Body.Acceleration-entropy()-Z
+Time.Body.Acceleration-arCoeff()-X,1
+Time.Body.Acceleration-arCoeff()-X,2
+Time.Body.Acceleration-arCoeff()-X,3
+Time.Body.Acceleration-arCoeff()-X,4
+Time.Body.Acceleration-arCoeff()-Y,1
+Time.Body.Acceleration-arCoeff()-Y,2
+Time.Body.Acceleration-arCoeff()-Y,3
+Time.Body.Acceleration-arCoeff()-Y,4
+Time.Body.Acceleration-arCoeff()-Z,1
+Time.Body.Acceleration-arCoeff()-Z,2
+Time.Body.Acceleration-arCoeff()-Z,3
+Time.Body.Acceleration-arCoeff()-Z,4
+Time.Body.Acceleration-correlation()-X,Y
+Time.Body.Acceleration-correlation()-X,Z
+Time.Body.Acceleration-correlation()-Y,Z
+Time.Gravity.Acceleration-mean()-X
+Time.Gravity.Acceleration-mean()-Y
+Time.Gravity.Acceleration-mean()-Z
+Time.Gravity.Acceleration-std()-X
+Time.Gravity.Acceleration-std()-Y
+Time.Gravity.Acceleration-std()-Z
+Time.Gravity.Acceleration-mad()-X
+Time.Gravity.Acceleration-mad()-Y
+Time.Gravity.Acceleration-mad()-Z
+Time.Gravity.Acceleration-max()-X
+Time.Gravity.Acceleration-max()-Y
+Time.Gravity.Acceleration-max()-Z
+Time.Gravity.Acceleration-min()-X
+Time.Gravity.Acceleration-min()-Y
+Time.Gravity.Acceleration-min()-Z
+Time.Gravity.Acceleration-sma()
+Time.Gravity.Acceleration-energy()-X
+Time.Gravity.Acceleration-energy()-Y
+Time.Gravity.Acceleration-energy()-Z
+Time.Gravity.Acceleration-iqr()-X
+Time.Gravity.Acceleration-iqr()-Y
+Time.Gravity.Acceleration-iqr()-Z
+Time.Gravity.Acceleration-entropy()-X
+Time.Gravity.Acceleration-entropy()-Y
+Time.Gravity.Acceleration-entropy()-Z
+Time.Gravity.Acceleration-arCoeff()-X,1
+Time.Gravity.Acceleration-arCoeff()-X,2
+Time.Gravity.Acceleration-arCoeff()-X,3
+Time.Gravity.Acceleration-arCoeff()-X,4
+Time.Gravity.Acceleration-arCoeff()-Y,1
+Time.Gravity.Acceleration-arCoeff()-Y,2
+Time.Gravity.Acceleration-arCoeff()-Y,3
+Time.Gravity.Acceleration-arCoeff()-Y,4
+Time.Gravity.Acceleration-arCoeff()-Z,1
+Time.Gravity.Acceleration-arCoeff()-Z,2
+Time.Gravity.Acceleration-arCoeff()-Z,3
+Time.Gravity.Acceleration-arCoeff()-Z,4
+Time.Gravity.Acceleration-correlation()-X,Y
+Time.Gravity.Acceleration-correlation()-X,Z
+Time.Gravity.Acceleration-correlation()-Y,Z
+Time.Body.Acceleration.Jerk-mean()-X
+Time.Body.Acceleration.Jerk-mean()-Y
+Time.Body.Acceleration.Jerk-mean()-Z
+Time.Body.Acceleration.Jerk-std()-X
+Time.Body.Acceleration.Jerk-std()-Y
+Time.Body.Acceleration.Jerk-std()-Z
+Time.Body.Acceleration.Jerk-mad()-X
+Time.Body.Acceleration.Jerk-mad()-Y
+Time.Body.Acceleration.Jerk-mad()-Z
+Time.Body.Acceleration.Jerk-max()-X
+Time.Body.Acceleration.Jerk-max()-Y
+Time.Body.Acceleration.Jerk-max()-Z
+Time.Body.Acceleration.Jerk-min()-X
+Time.Body.Acceleration.Jerk-min()-Y
+Time.Body.Acceleration.Jerk-min()-Z
+Time.Body.Acceleration.Jerk-sma()
+Time.Body.Acceleration.Jerk-energy()-X
+Time.Body.Acceleration.Jerk-energy()-Y
+Time.Body.Acceleration.Jerk-energy()-Z
+Time.Body.Acceleration.Jerk-iqr()-X
+Time.Body.Acceleration.Jerk-iqr()-Y
+Time.Body.Acceleration.Jerk-iqr()-Z
+Time.Body.Acceleration.Jerk-entropy()-X
+Time.Body.Acceleration.Jerk-entropy()-Y
+Time.Body.Acceleration.Jerk-entropy()-Z
+Time.Body.Acceleration.Jerk-arCoeff()-X,1
+Time.Body.Acceleration.Jerk-arCoeff()-X,2
+Time.Body.Acceleration.Jerk-arCoeff()-X,3
+Time.Body.Acceleration.Jerk-arCoeff()-X,4
+Time.Body.Acceleration.Jerk-arCoeff()-Y,1
+Time.Body.Acceleration.Jerk-arCoeff()-Y,2
+Time.Body.Acceleration.Jerk-arCoeff()-Y,3
+Time.Body.Acceleration.Jerk-arCoeff()-Y,4
+Time.Body.Acceleration.Jerk-arCoeff()-Z,1
+Time.Body.Acceleration.Jerk-arCoeff()-Z,2
+Time.Body.Acceleration.Jerk-arCoeff()-Z,3
+Time.Body.Acceleration.Jerk-arCoeff()-Z,4
+Time.Body.Acceleration.Jerk-correlation()-X,Y
+Time.Body.Acceleration.Jerk-correlation()-X,Z
+Time.Body.Acceleration.Jerk-correlation()-Y,Z
+Time.Body.gyroscope-mean()-X
+Time.Body.gyroscope-mean()-Y
+Time.Body.gyroscope-mean()-Z
+Time.Body.gyroscope-std()-X
+Time.Body.gyroscope-std()-Y
+Time.Body.gyroscope-std()-Z
+Time.Body.gyroscope-mad()-X
+Time.Body.gyroscope-mad()-Y
+Time.Body.gyroscope-mad()-Z
+Time.Body.gyroscope-max()-X
+Time.Body.gyroscope-max()-Y
+Time.Body.gyroscope-max()-Z
+Time.Body.gyroscope-min()-X
+Time.Body.gyroscope-min()-Y
+Time.Body.gyroscope-min()-Z
+Time.Body.gyroscope-sma()
+Time.Body.gyroscope-energy()-X
+Time.Body.gyroscope-energy()-Y
+Time.Body.gyroscope-energy()-Z
+Time.Body.gyroscope-iqr()-X
+Time.Body.gyroscope-iqr()-Y
+Time.Body.gyroscope-iqr()-Z
+Time.Body.gyroscope-entropy()-X
+Time.Body.gyroscope-entropy()-Y
+Time.Body.gyroscope-entropy()-Z
+Time.Body.gyroscope-arCoeff()-X,1
+Time.Body.gyroscope-arCoeff()-X,2
+Time.Body.gyroscope-arCoeff()-X,3
+Time.Body.gyroscope-arCoeff()-X,4
+Time.Body.gyroscope-arCoeff()-Y,1
+Time.Body.gyroscope-arCoeff()-Y,2
+Time.Body.gyroscope-arCoeff()-Y,3
+Time.Body.gyroscope-arCoeff()-Y,4
+Time.Body.gyroscope-arCoeff()-Z,1
+Time.Body.gyroscope-arCoeff()-Z,2
+Time.Body.gyroscope-arCoeff()-Z,3
+Time.Body.gyroscope-arCoeff()-Z,4
+Time.Body.gyroscope-correlation()-X,Y
+Time.Body.gyroscope-correlation()-X,Z
+Time.Body.gyroscope-correlation()-Y,Z
+Time.Body.gyroscope.Jerk-mean()-X
+Time.Body.gyroscope.Jerk-mean()-Y
+Time.Body.gyroscope.Jerk-mean()-Z
+Time.Body.gyroscope.Jerk-std()-X
+Time.Body.gyroscope.Jerk-std()-Y
+Time.Body.gyroscope.Jerk-std()-Z
+Time.Body.gyroscope.Jerk-mad()-X
+Time.Body.gyroscope.Jerk-mad()-Y
+Time.Body.gyroscope.Jerk-mad()-Z
+Time.Body.gyroscope.Jerk-max()-X
+Time.Body.gyroscope.Jerk-max()-Y
+Time.Body.gyroscope.Jerk-max()-Z
+Time.Body.gyroscope.Jerk-min()-X
+Time.Body.gyroscope.Jerk-min()-Y
+Time.Body.gyroscope.Jerk-min()-Z
+Time.Body.gyroscope.Jerk-sma()
+Time.Body.gyroscope.Jerk-energy()-X
+Time.Body.gyroscope.Jerk-energy()-Y
+Time.Body.gyroscope.Jerk-energy()-Z
+Time.Body.gyroscope.Jerk-iqr()-X
+Time.Body.gyroscope.Jerk-iqr()-Y
+Time.Body.gyroscope.Jerk-iqr()-Z
+Time.Body.gyroscope.Jerk-entropy()-X
+Time.Body.gyroscope.Jerk-entropy()-Y
+Time.Body.gyroscope.Jerk-entropy()-Z
+Time.Body.gyroscope.Jerk-arCoeff()-X,1
+Time.Body.gyroscope.Jerk-arCoeff()-X,2
+Time.Body.gyroscope.Jerk-arCoeff()-X,3
+Time.Body.gyroscope.Jerk-arCoeff()-X,4
+Time.Body.gyroscope.Jerk-arCoeff()-Y,1
+Time.Body.gyroscope.Jerk-arCoeff()-Y,2
+Time.Body.gyroscope.Jerk-arCoeff()-Y,3
+Time.Body.gyroscope.Jerk-arCoeff()-Y,4
+Time.Body.gyroscope.Jerk-arCoeff()-Z,1
+Time.Body.gyroscope.Jerk-arCoeff()-Z,2
+Time.Body.gyroscope.Jerk-arCoeff()-Z,3
+Time.Body.gyroscope.Jerk-arCoeff()-Z,4
+Time.Body.gyroscope.Jerk-correlation()-X,Y
+Time.Body.gyroscope.Jerk-correlation()-X,Z
+Time.Body.gyroscope.Jerk-correlation()-Y,Z
+Time.Body.Acceleration.Magnitude-mean()
+Time.Body.Acceleration.Magnitude-std()
+Time.Body.Acceleration.Magnitude-mad()
+Time.Body.Acceleration.Magnitude-max()
+Time.Body.Acceleration.Magnitude-min()
+Time.Body.Acceleration.Magnitude-sma()
+Time.Body.Acceleration.Magnitude-energy()
+Time.Body.Acceleration.Magnitude-iqr()
+Time.Body.Acceleration.Magnitude-entropy()
+Time.Body.Acceleration.Magnitude-arCoeff()1
+Time.Body.Acceleration.Magnitude-arCoeff()2
+Time.Body.Acceleration.Magnitude-arCoeff()3
+Time.Body.Acceleration.Magnitude-arCoeff()4
+Time.Gravity.Acceleration.Magnitude-mean()
+Time.Gravity.Acceleration.Magnitude-std()
+Time.Gravity.Acceleration.Magnitude-mad()
+Time.Gravity.Acceleration.Magnitude-max()
+Time.Gravity.Acceleration.Magnitude-min()
+Time.Gravity.Acceleration.Magnitude-sma()
+Time.Gravity.Acceleration.Magnitude-energy()
+Time.Gravity.Acceleration.Magnitude-iqr()
+Time.Gravity.Acceleration.Magnitude-entropy()
+Time.Gravity.Acceleration.Magnitude-arCoeff()1
+Time.Gravity.Acceleration.Magnitude-arCoeff()2
+Time.Gravity.Acceleration.Magnitude-arCoeff()3
+Time.Gravity.Acceleration.Magnitude-arCoeff()4
+Time.Body.Acceleration.Jerk.Magnitude-mean()
+Time.Body.Acceleration.Jerk.Magnitude-std()
+Time.Body.Acceleration.Jerk.Magnitude-mad()
+Time.Body.Acceleration.Jerk.Magnitude-max()
+Time.Body.Acceleration.Jerk.Magnitude-min()
+Time.Body.Acceleration.Jerk.Magnitude-sma()
+Time.Body.Acceleration.Jerk.Magnitude-energy()
+Time.Body.Acceleration.Jerk.Magnitude-iqr()
+Time.Body.Acceleration.Jerk.Magnitude-entropy()
+Time.Body.Acceleration.Jerk.Magnitude-arCoeff()1
+Time.Body.Acceleration.Jerk.Magnitude-arCoeff()2
+Time.Body.Acceleration.Jerk.Magnitude-arCoeff()3
+Time.Body.Acceleration.Jerk.Magnitude-arCoeff()4
+Time.Body.gyroscope.Magnitude-mean()
+Time.Body.gyroscope.Magnitude-std()
+Time.Body.gyroscope.Magnitude-mad()
+Time.Body.gyroscope.Magnitude-max()
+Time.Body.gyroscope.Magnitude-min()
+Time.Body.gyroscope.Magnitude-sma()
+Time.Body.gyroscope.Magnitude-energy()
+Time.Body.gyroscope.Magnitude-iqr()
+Time.Body.gyroscope.Magnitude-entropy()
+Time.Body.gyroscope.Magnitude-arCoeff()1
+Time.Body.gyroscope.Magnitude-arCoeff()2
+Time.Body.gyroscope.Magnitude-arCoeff()3
+Time.Body.gyroscope.Magnitude-arCoeff()4
+Time.Body.gyroscope.Jerk.Magnitude-mean()
+Time.Body.gyroscope.Jerk.Magnitude-std()
+Time.Body.gyroscope.Jerk.Magnitude-mad()
+Time.Body.gyroscope.Jerk.Magnitude-max()
+Time.Body.gyroscope.Jerk.Magnitude-min()
+Time.Body.gyroscope.Jerk.Magnitude-sma()
+Time.Body.gyroscope.Jerk.Magnitude-energy()
+Time.Body.gyroscope.Jerk.Magnitude-iqr()
+Time.Body.gyroscope.Jerk.Magnitude-entropy()
+Time.Body.gyroscope.Jerk.Magnitude-arCoeff()1
+Time.Body.gyroscope.Jerk.Magnitude-arCoeff()2
+Time.Body.gyroscope.Jerk.Magnitude-arCoeff()3
+Time.Body.gyroscope.Jerk.Magnitude-arCoeff()4
+FFT.Body.Acceleration-mean()-X
+FFT.Body.Acceleration-mean()-Y
+FFT.Body.Acceleration-mean()-Z
+FFT.Body.Acceleration-std()-X
+FFT.Body.Acceleration-std()-Y
+FFT.Body.Acceleration-std()-Z
+FFT.Body.Acceleration-mad()-X
+FFT.Body.Acceleration-mad()-Y
+FFT.Body.Acceleration-mad()-Z
+FFT.Body.Acceleration-max()-X
+FFT.Body.Acceleration-max()-Y
+FFT.Body.Acceleration-max()-Z
+FFT.Body.Acceleration-min()-X
+FFT.Body.Acceleration-min()-Y
+FFT.Body.Acceleration-min()-Z
+FFT.Body.Acceleration-sma()
+FFT.Body.Acceleration-energy()-X
+FFT.Body.Acceleration-energy()-Y
+FFT.Body.Acceleration-energy()-Z
+FFT.Body.Acceleration-iqr()-X
+FFT.Body.Acceleration-iqr()-Y
+FFT.Body.Acceleration-iqr()-Z
+FFT.Body.Acceleration-entropy()-X
+FFT.Body.Acceleration-entropy()-Y
+FFT.Body.Acceleration-entropy()-Z
+FFT.Body.Acceleration-maxInds-X
+FFT.Body.Acceleration-maxInds-Y
+FFT.Body.Acceleration-maxInds-Z
+FFT.Body.Acceleration-meanFreq()-X
+FFT.Body.Acceleration-meanFreq()-Y
+FFT.Body.Acceleration-meanFreq()-Z
+FFT.Body.Acceleration-skewness()-X
+FFT.Body.Acceleration-kurtosis()-X
+FFT.Body.Acceleration-skewness()-Y
+FFT.Body.Acceleration-kurtosis()-Y
+FFT.Body.Acceleration-skewness()-Z
+FFT.Body.Acceleration-kurtosis()-Z
+FFT.Body.Acceleration-bandsEnergy()-1,8
+FFT.Body.Acceleration-bandsEnergy()-9,16
+FFT.Body.Acceleration-bandsEnergy()-17,24
+FFT.Body.Acceleration-bandsEnergy()-25,32
+FFT.Body.Acceleration-bandsEnergy()-33,40
+FFT.Body.Acceleration-bandsEnergy()-41,48
+FFT.Body.Acceleration-bandsEnergy()-49,56
+FFT.Body.Acceleration-bandsEnergy()-57,64
+FFT.Body.Acceleration-bandsEnergy()-1,16
+FFT.Body.Acceleration-bandsEnergy()-17,32
+FFT.Body.Acceleration-bandsEnergy()-33,48
+FFT.Body.Acceleration-bandsEnergy()-49,64
+FFT.Body.Acceleration-bandsEnergy()-1,24
+FFT.Body.Acceleration-bandsEnergy()-25,48
+FFT.Body.Acceleration-bandsEnergy()-1,8
+FFT.Body.Acceleration-bandsEnergy()-9,16
+FFT.Body.Acceleration-bandsEnergy()-17,24
+FFT.Body.Acceleration-bandsEnergy()-25,32
+FFT.Body.Acceleration-bandsEnergy()-33,40
+FFT.Body.Acceleration-bandsEnergy()-41,48
+FFT.Body.Acceleration-bandsEnergy()-49,56
+FFT.Body.Acceleration-bandsEnergy()-57,64
+FFT.Body.Acceleration-bandsEnergy()-1,16
+FFT.Body.Acceleration-bandsEnergy()-17,32
+FFT.Body.Acceleration-bandsEnergy()-33,48
+FFT.Body.Acceleration-bandsEnergy()-49,64
+FFT.Body.Acceleration-bandsEnergy()-1,24
+FFT.Body.Acceleration-bandsEnergy()-25,48
+FFT.Body.Acceleration-bandsEnergy()-1,8
+FFT.Body.Acceleration-bandsEnergy()-9,16
+FFT.Body.Acceleration-bandsEnergy()-17,24
+FFT.Body.Acceleration-bandsEnergy()-25,32
+FFT.Body.Acceleration-bandsEnergy()-33,40
+FFT.Body.Acceleration-bandsEnergy()-41,48
+FFT.Body.Acceleration-bandsEnergy()-49,56
+FFT.Body.Acceleration-bandsEnergy()-57,64
+FFT.Body.Acceleration-bandsEnergy()-1,16
+FFT.Body.Acceleration-bandsEnergy()-17,32
+FFT.Body.Acceleration-bandsEnergy()-33,48
+FFT.Body.Acceleration-bandsEnergy()-49,64
+FFT.Body.Acceleration-bandsEnergy()-1,24
+FFT.Body.Acceleration-bandsEnergy()-25,48
+FFT.Body.Acceleration.Jerk-mean()-X
+FFT.Body.Acceleration.Jerk-mean()-Y
+FFT.Body.Acceleration.Jerk-mean()-Z
+FFT.Body.Acceleration.Jerk-std()-X
+FFT.Body.Acceleration.Jerk-std()-Y
+FFT.Body.Acceleration.Jerk-std()-Z
+FFT.Body.Acceleration.Jerk-mad()-X
+FFT.Body.Acceleration.Jerk-mad()-Y
+FFT.Body.Acceleration.Jerk-mad()-Z
+FFT.Body.Acceleration.Jerk-max()-X
+FFT.Body.Acceleration.Jerk-max()-Y
+FFT.Body.Acceleration.Jerk-max()-Z
+FFT.Body.Acceleration.Jerk-min()-X
+FFT.Body.Acceleration.Jerk-min()-Y
+FFT.Body.Acceleration.Jerk-min()-Z
+FFT.Body.Acceleration.Jerk-sma()
+FFT.Body.Acceleration.Jerk-energy()-X
+FFT.Body.Acceleration.Jerk-energy()-Y
+FFT.Body.Acceleration.Jerk-energy()-Z
+FFT.Body.Acceleration.Jerk-iqr()-X
+FFT.Body.Acceleration.Jerk-iqr()-Y
+FFT.Body.Acceleration.Jerk-iqr()-Z
+FFT.Body.Acceleration.Jerk-entropy()-X
+FFT.Body.Acceleration.Jerk-entropy()-Y
+FFT.Body.Acceleration.Jerk-entropy()-Z
+FFT.Body.Acceleration.Jerk-maxInds-X
+FFT.Body.Acceleration.Jerk-maxInds-Y
+FFT.Body.Acceleration.Jerk-maxInds-Z
+FFT.Body.Acceleration.Jerk-meanFreq()-X
+FFT.Body.Acceleration.Jerk-meanFreq()-Y
+FFT.Body.Acceleration.Jerk-meanFreq()-Z
+FFT.Body.Acceleration.Jerk-skewness()-X
+FFT.Body.Acceleration.Jerk-kurtosis()-X
+FFT.Body.Acceleration.Jerk-skewness()-Y
+FFT.Body.Acceleration.Jerk-kurtosis()-Y
+FFT.Body.Acceleration.Jerk-skewness()-Z
+FFT.Body.Acceleration.Jerk-kurtosis()-Z
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,8
+FFT.Body.Acceleration.Jerk-bandsEnergy()-9,16
+FFT.Body.Acceleration.Jerk-bandsEnergy()-17,24
+FFT.Body.Acceleration.Jerk-bandsEnergy()-25,32
+FFT.Body.Acceleration.Jerk-bandsEnergy()-33,40
+FFT.Body.Acceleration.Jerk-bandsEnergy()-41,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-49,56
+FFT.Body.Acceleration.Jerk-bandsEnergy()-57,64
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,16
+FFT.Body.Acceleration.Jerk-bandsEnergy()-17,32
+FFT.Body.Acceleration.Jerk-bandsEnergy()-33,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-49,64
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,24
+FFT.Body.Acceleration.Jerk-bandsEnergy()-25,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,8
+FFT.Body.Acceleration.Jerk-bandsEnergy()-9,16
+FFT.Body.Acceleration.Jerk-bandsEnergy()-17,24
+FFT.Body.Acceleration.Jerk-bandsEnergy()-25,32
+FFT.Body.Acceleration.Jerk-bandsEnergy()-33,40
+FFT.Body.Acceleration.Jerk-bandsEnergy()-41,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-49,56
+FFT.Body.Acceleration.Jerk-bandsEnergy()-57,64
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,16
+FFT.Body.Acceleration.Jerk-bandsEnergy()-17,32
+FFT.Body.Acceleration.Jerk-bandsEnergy()-33,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-49,64
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,24
+FFT.Body.Acceleration.Jerk-bandsEnergy()-25,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,8
+FFT.Body.Acceleration.Jerk-bandsEnergy()-9,16
+FFT.Body.Acceleration.Jerk-bandsEnergy()-17,24
+FFT.Body.Acceleration.Jerk-bandsEnergy()-25,32
+FFT.Body.Acceleration.Jerk-bandsEnergy()-33,40
+FFT.Body.Acceleration.Jerk-bandsEnergy()-41,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-49,56
+FFT.Body.Acceleration.Jerk-bandsEnergy()-57,64
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,16
+FFT.Body.Acceleration.Jerk-bandsEnergy()-17,32
+FFT.Body.Acceleration.Jerk-bandsEnergy()-33,48
+FFT.Body.Acceleration.Jerk-bandsEnergy()-49,64
+FFT.Body.Acceleration.Jerk-bandsEnergy()-1,24
+FFT.Body.Acceleration.Jerk-bandsEnergy()-25,48
+FFT.Body.gyroscope-mean()-X
+FFT.Body.gyroscope-mean()-Y
+FFT.Body.gyroscope-mean()-Z
+FFT.Body.gyroscope-std()-X
+FFT.Body.gyroscope-std()-Y
+FFT.Body.gyroscope-std()-Z
+FFT.Body.gyroscope-mad()-X
+FFT.Body.gyroscope-mad()-Y
+FFT.Body.gyroscope-mad()-Z
+FFT.Body.gyroscope-max()-X
+FFT.Body.gyroscope-max()-Y
+FFT.Body.gyroscope-max()-Z
+FFT.Body.gyroscope-min()-X
+FFT.Body.gyroscope-min()-Y
+FFT.Body.gyroscope-min()-Z
+FFT.Body.gyroscope-sma()
+FFT.Body.gyroscope-energy()-X
+FFT.Body.gyroscope-energy()-Y
+FFT.Body.gyroscope-energy()-Z
+FFT.Body.gyroscope-iqr()-X
+FFT.Body.gyroscope-iqr()-Y
+FFT.Body.gyroscope-iqr()-Z
+FFT.Body.gyroscope-entropy()-X
+FFT.Body.gyroscope-entropy()-Y
+FFT.Body.gyroscope-entropy()-Z
+FFT.Body.gyroscope-maxInds-X
+FFT.Body.gyroscope-maxInds-Y
+FFT.Body.gyroscope-maxInds-Z
+FFT.Body.gyroscope-meanFreq()-X
+FFT.Body.gyroscope-meanFreq()-Y
+FFT.Body.gyroscope-meanFreq()-Z
+FFT.Body.gyroscope-skewness()-X
+FFT.Body.gyroscope-kurtosis()-X
+FFT.Body.gyroscope-skewness()-Y
+FFT.Body.gyroscope-kurtosis()-Y
+FFT.Body.gyroscope-skewness()-Z
+FFT.Body.gyroscope-kurtosis()-Z
+FFT.Body.gyroscope-bandsEnergy()-1,8
+FFT.Body.gyroscope-bandsEnergy()-9,16
+FFT.Body.gyroscope-bandsEnergy()-17,24
+FFT.Body.gyroscope-bandsEnergy()-25,32
+FFT.Body.gyroscope-bandsEnergy()-33,40
+FFT.Body.gyroscope-bandsEnergy()-41,48
+FFT.Body.gyroscope-bandsEnergy()-49,56
+FFT.Body.gyroscope-bandsEnergy()-57,64
+FFT.Body.gyroscope-bandsEnergy()-1,16
+FFT.Body.gyroscope-bandsEnergy()-17,32
+FFT.Body.gyroscope-bandsEnergy()-33,48
+FFT.Body.gyroscope-bandsEnergy()-49,64
+FFT.Body.gyroscope-bandsEnergy()-1,24
+FFT.Body.gyroscope-bandsEnergy()-25,48
+FFT.Body.gyroscope-bandsEnergy()-1,8
+FFT.Body.gyroscope-bandsEnergy()-9,16
+FFT.Body.gyroscope-bandsEnergy()-17,24
+FFT.Body.gyroscope-bandsEnergy()-25,32
+FFT.Body.gyroscope-bandsEnergy()-33,40
+FFT.Body.gyroscope-bandsEnergy()-41,48
+FFT.Body.gyroscope-bandsEnergy()-49,56
+FFT.Body.gyroscope-bandsEnergy()-57,64
+FFT.Body.gyroscope-bandsEnergy()-1,16
+FFT.Body.gyroscope-bandsEnergy()-17,32
+FFT.Body.gyroscope-bandsEnergy()-33,48
+FFT.Body.gyroscope-bandsEnergy()-49,64
+FFT.Body.gyroscope-bandsEnergy()-1,24
+FFT.Body.gyroscope-bandsEnergy()-25,48
+FFT.Body.gyroscope-bandsEnergy()-1,8
+FFT.Body.gyroscope-bandsEnergy()-9,16
+FFT.Body.gyroscope-bandsEnergy()-17,24
+FFT.Body.gyroscope-bandsEnergy()-25,32
+FFT.Body.gyroscope-bandsEnergy()-33,40
+FFT.Body.gyroscope-bandsEnergy()-41,48
+FFT.Body.gyroscope-bandsEnergy()-49,56
+FFT.Body.gyroscope-bandsEnergy()-57,64
+FFT.Body.gyroscope-bandsEnergy()-1,16
+FFT.Body.gyroscope-bandsEnergy()-17,32
+FFT.Body.gyroscope-bandsEnergy()-33,48
+FFT.Body.gyroscope-bandsEnergy()-49,64
+FFT.Body.gyroscope-bandsEnergy()-1,24
+FFT.Body.gyroscope-bandsEnergy()-25,48
+FFT.Body.Acceleration.Magnitude-mean()
+FFT.Body.Acceleration.Magnitude-std()
+FFT.Body.Acceleration.Magnitude-mad()
+FFT.Body.Acceleration.Magnitude-max()
+FFT.Body.Acceleration.Magnitude-min()
+FFT.Body.Acceleration.Magnitude-sma()
+FFT.Body.Acceleration.Magnitude-energy()
+FFT.Body.Acceleration.Magnitude-iqr()
+FFT.Body.Acceleration.Magnitude-entropy()
+FFT.Body.Acceleration.Magnitude-maxInds
+FFT.Body.Acceleration.Magnitude-meanFreq()
+FFT.Body.Acceleration.Magnitude-skewness()
+FFT.Body.Acceleration.Magnitude-kurtosis()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-mean()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-std()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-mad()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-max()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-min()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-sma()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-energy()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-iqr()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-entropy()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-maxInds
+FFT.Body.Body.Acceleration.Jerk.Magnitude-meanFreq()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-skewness()
+FFT.Body.Body.Acceleration.Jerk.Magnitude-kurtosis()
+FFT.Body.Body.gyroscope.Magnitude-mean()
+FFT.Body.Body.gyroscope.Magnitude-std()
+FFT.Body.Body.gyroscope.Magnitude-mad()
+FFT.Body.Body.gyroscope.Magnitude-max()
+FFT.Body.Body.gyroscope.Magnitude-min()
+FFT.Body.Body.gyroscope.Magnitude-sma()
+FFT.Body.Body.gyroscope.Magnitude-energy()
+FFT.Body.Body.gyroscope.Magnitude-iqr()
+FFT.Body.Body.gyroscope.Magnitude-entropy()
+FFT.Body.Body.gyroscope.Magnitude-maxInds
+FFT.Body.Body.gyroscope.Magnitude-meanFreq()
+FFT.Body.Body.gyroscope.Magnitude-skewness()
+FFT.Body.Body.gyroscope.Magnitude-kurtosis()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-mean()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-std()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-mad()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-max()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-min()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-sma()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-energy()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-iqr()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-entropy()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-maxInds
+FFT.Body.Body.gyroscope.Jerk.Magnitude-meanFreq()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-skewness()
+FFT.Body.Body.gyroscope.Jerk.Magnitude-kurtosis()
+angle(Time.Body.Acceleration.Mean,gravity)
+angle(Time.Body.Acceleration.Jerk.Mean),gravity.Mean)
+angle(Time.Body.gyroscope.Mean,gravity.Mean)
+angle(Time.Body.gyroscope.Jerk.Mean,gravity.Mean)
+angle(X,gravity.Mean)
+angle(Y,gravity.Mean)
+angle(Z,gravity.Mean)
